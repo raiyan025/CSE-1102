@@ -6,7 +6,7 @@ int main()
 
     float num1, num2;
     char op;
-    printf("Choose an option(+ - * /):\n");
+    printf("Choose an option(+ - * / %%):\n");
     scanf("%c", &op);
 
     printf("Enter Two Numbers:\n");
@@ -31,6 +31,15 @@ int main()
         else
         {
             printf("Division is not possible");
+        }
+        break;
+        case '%':
+    if (num2 != 0)
+      {  printf("Remainder of %d and %d is:%d", (int)num1,(int) num2,(int) num1 % (int) num2);
+      }
+       else
+        {
+            printf("Remainder is not possible");
         }
         break;
     default:
