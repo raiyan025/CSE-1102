@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -25,6 +25,45 @@ int main()
         printf("Invalid input. Please enter a number between 1 and 7.\n");
 
     return 0;
-}
+}*/
 
-//will update it using switch case
+// using switch case
+
+#include <stdio.h>
+
+int main()
+{
+    int day;
+
+    printf("Enter day number (1 to 7):");
+    scanf("%d", &day);
+
+    switch (day)
+    {
+    case 1:
+        printf("Saturday");
+        break;
+    case 2:
+        printf("Sunday");
+        break;
+    case 3:
+        printf("Monday");
+        break;
+    case 4:
+        printf("Tuesday");
+        break;
+    case 5:
+        printf("Wednesday");
+        break;
+    case 6:
+        printf("Thursday");
+        break;
+    case 7:
+        printf("Friday");
+        break;
+    default:
+        printf("Invalid input. Please enter a number between 1 and 7.");
+    }
+
+    return 0;
+}
